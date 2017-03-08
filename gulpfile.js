@@ -29,6 +29,7 @@ gulp.task('js:vendor', function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
+       'node_modules/bootstrap/dist/masonry.pkgd.js'
     ])
         .pipe(concat('vendor.js'))
         .pipe(gulpIf(!isDevelopment, uglify()))

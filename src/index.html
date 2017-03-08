@@ -3,17 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <title>Snow</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/vendor.css">
+
 </head>
 <body>
-<header class="header" id="header">
-    <nav>
-      <div class="header-top">
-          <a href="#" class="logo"><img src="/img/ps-images/logo.png"/></a>
-          <a href="#" class="logo-light"><img src="/img/ps-images/logo-light.png"/></a>
-      </div>
-    </nav>
-</header>
+<div class="wrapper" id="wrapper">
+    <header class="header" id="header">
+        <div class="header_container">
+            <div class="header-top">
+                <a href="#" class="logo"><img src="/img/ps-images/logo.png" width="85"/></a>
+                <a href="#" class="logo-light"><img src="/img/ps-images/logo-light.png" width="85"/></a>
+            </div>
 
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar glyphicon glyphicon-minus"></span>
+                <span class="icon-bar glyphicon glyphicon-minus"></span>
+                <span class="icon-bar glyphicon glyphicon-minus"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <nav id="navTop">
+                    <ul class="navigation">
+                        <li class="nav_item"><a class="link" href="#">about</a></li>
+                        <li class="nav_item"><a class="link" href="#">contact</a></li>
+                        <li class="nav_item"><a class="link" href="#">portfolio</a></li>
+                        <li class="nav_item"><a class="link" href="#">blog</a></li>
+                        <li class="nav_item"><a class="link" href="#">wordpress theme</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="start_section">
+        <div class="textInfo">
+            <H2 class="texttop">new branding agensy</H2>
+            <H1 class="textmid">Whe are about to change the way</H1>
+            <div class="textbot">you publish on the web</div>
+            <div class="scrollbutton"><a href="#"><img src="/img/ps-images/scrollbutton.png" alt=""></a></div>
+        </div>
+    </section>
+
+    <section class="aboutInfo">
+        <div class="contAbout">
+            <div class="sectionHeader">About Our Agensy</div>
+            <div class="sectionContent">
+                We are a new design studio based in USA. We have over 20 years of combined experience, and know a
+                thing or two about designing websites and mobile apps. Clever use of technology and lean processes
+                enable us to work faster and smarter.
+            </div>
+            <div class="sinse"><img src="/img/ps-images/sign.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="countsInfo">
+        <div class="container-fluid ">
+            <div class="row rowCount">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="count">
+                        <img src="/img/ps-images/pe-7s-portfolio.png" alt="" class="countImg">
+                        <div class="countContainer">
+                            <div class="countNumber">548</div>
+                            <div class="countName">Projects complited</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="count">
+                        <img src="/img/ps-images/pe-7s-clock.png" alt="" class="countImg">
+                        <div class="countContainer">
+                            <div class="countNumber">1465</div>
+                            <div class="countName">Working hours</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="count">
+                        <img src="/img/ps-images/pe-7s-star.png" alt="" class="countImg">
+                        <div class="countContainer">
+                            <div class="countNumber">612</div>
+                            <div class="countName">Positive Feedbacks</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="count">
+                        <img src="/img/ps-images/pe-7s-like.png" alt="" class="countImg">
+                        <div class="countContainer">
+                            <div class="countNumber">735</div>
+                            <div class="countName">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallerryContainer">
+            <div class="galerryHeader">
+                <h2>Best Projects</h2>
+                <div class="galleryInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex iusto
+                    laudantium mollitia odio quasi sed soluta temporibus. Animi, ipsa.
+                </div>
+            </div>
+
+            <div class="galleryBody js-masonry">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
 <footer class="footer" id="footer"></footer>
+<script src="/js/vendor.js"></script>
 </body>
 </html>
