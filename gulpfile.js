@@ -29,7 +29,9 @@ gulp.task('js:vendor', function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
-       'node_modules/bootstrap/dist/masonry.pkgd.js'
+       'node_modules/masonry-layout/dist/masonry.pkgd.js',
+        'node_modules/bxslider/dist/jquery.bxslider.js',
+        'node_modules/flickity/dist/flickity.pkgd.js'
     ])
         .pipe(concat('vendor.js'))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -39,6 +41,9 @@ gulp.task('js:vendor', function () {
 gulp.task('css:vendor', function () {
     return gulp.src([
         'node_modules/bootstrap/dist/css/bootstrap.css',
+        'node_modules/bootstrap/dist/css/bootstrap-theme.css',
+        'node_modules/bxslider/dist/jquery.bxslider.css',
+        'node_modules/flickity/dist/flickity.css'
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
         .pipe(concat('vendor.css'))

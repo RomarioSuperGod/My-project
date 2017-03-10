@@ -147,12 +147,8 @@ a {
       max-width: 750px;
       margin-top: 40px;
     }
-    .sinse {
+    .sighn {
       margin: 39px;
-      //width: 222px;
-      //height: 58px;
-      //background-size:contain;
-
     }
   }
 }
@@ -174,7 +170,7 @@ a {
       .countContainer {
         color: #ffffff;
         margin-left: 68px;
-        margin-right:;
+        //margin-right:;
         .countNumber {
           font-family: 'WorkSans-Regular', sans-serif;
           font-size: 18px;
@@ -199,18 +195,157 @@ a {
       max-width: 690px;
       margin: 0 auto;
       h2 {
-        font-family:'PlayfairDisplay-Bold', serif;
-        font-size:38px;
-        margin-top:94px;
+        font-family: 'PlayfairDisplay-Bold', serif;
+        font-size: 38px;
+        margin-top: 94px;
         color: #171717;
       }
-      .galleryInfo{
-        margin-top:40px;
-        font-family:'WorkSans-Regular', sans-serif;
-        font-size:15px;
+      .galleryInfo {
+        margin-top: 40px;
+        font-family: 'WorkSans-Regular', sans-serif;
+        font-size: 15px;
         color: #606060;
         letter-spacing: 1px;
       }
     }
+    .galleryBody {
+      margin: 60px 0 100px 0;
+      padding: 0;
+
+      .item-masonry {
+        position: relative;
+        width: 390px;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        img {
+          width: 390px;
+          height: 390px;
+          margin: 0;
+          padding: 0;
+        }
+        &:hover .cover-item-masonry {
+          display: block;
+        }
+      }
+
+      .cover-item-masonry {
+        display: none;
+        background-color: #000000;
+        opacity: .9;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          text-decoration: none;
+          i {
+            color: #ffffff;
+            position: absolute;
+            top: 36%;
+            left: 31%;
+            h2 {
+              text-align: center;
+              font-family: 'PlayfairDisplay-Bold', sans-serif;
+              font-style: normal;
+              font-size: 24px;
+            }
+            p {
+              text-align: center;
+              font-family: 'WorkSans-Medium', sans-serif;
+              text-transform: uppercase;
+              font-style: normal;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.carouselQuote {
+  min-height: 500px;
+  .page {
+    background-image: url("/img/ps-images/pattern bg.jpg");
+    .main-carousel {
+      .carousel-cell {
+        width: 100%;
+      }
+      @media screen and ( min-width: 768px ) {
+        .gallery-cell {
+          width: 50%;
+        }
+      }
+    }
+    .pageContainer {
+      margin: 0 auto;
+      max-width: 710px;
+      color: #f4f4f4;
+      .mainText {
+        margin-top: 180px;
+        font-family: 'PlayfairDisplay', sans-serif;
+        font-size: 30px;
+        text-align: center;
+
+      }
+      .authorName {
+        margin-top: 40px;
+        font-family: 'WorkSans-Medium', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+.labelCarousell {
+  min-height: 200px;
+  background: #ffffff;
+  .label-carousel {
+    justify-content: center;
+    text-align: center;
+
+    .carousel-cell {
+      width: 300px;
+      margin-top: 70px;
+    }
+  }
+}
+
+.latestBlog {
+  background: #fafafa;
+  min-height: 855px;
+
+  .headerBlogContainer {
+    text-align: center;
+    max-width: 690px;
+    margin: 0 auto;
+    min-height: 260px;
+    h2 {
+      font-family: 'PlayfairDisplay-Bold', serif;
+      font-size: 38px;
+      margin-top: 94px;
+      color: #171717;
+    }
+    .latestBlogInfo {
+      margin-top: 40px;
+      font-family: 'WorkSans-Regular', sans-serif;
+      font-size: 15px;
+      color: #606060;
+      letter-spacing: 1px;
+    }
+  }
+
+  .blogContent {
+    max-width: 370px;
+    min-height: 430px;
   }
 }
