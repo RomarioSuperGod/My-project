@@ -30,6 +30,7 @@ a {
   position: fixed;
   .header_container {
     max-width: 1170px;
+    height: 100px;
 
     .header-top {
       float: left;
@@ -52,6 +53,7 @@ a {
           text-align: justify;
           margin-right: 80px;
           width: 100%;
+          height: 100px;
 
           &:after {
             width: 100%;
@@ -92,6 +94,7 @@ a {
   background: #ffffff;
   .header_container {
     max-width: 1170px;
+    height: 100px;
 
     .header-top {
       float: left;
@@ -116,6 +119,7 @@ a {
           text-align: justify;
           margin-right: 80px;
           width: 100%;
+          height: 100px;
 
           &:after {
             width: 100%;
@@ -644,6 +648,7 @@ a {
       }
     }
     .contactSide {
+      margin: 0 auto;
       h2 {
         font-family: 'PlayfairDisplay-Bold', serif;
         font-size: 38px;
@@ -686,27 +691,47 @@ a {
     }
     .massageSide {
       max-width: 670px;
-      margin-top: 94px;
+      margin-top: 72px;
       .form {
+        #inputName-error{
+          color: #606060;
+        }
+        #inputEmail-error{
+          color: #606060;
+        }
+        #inputTitle-error{
+          color: #606060;
+        }
+        #textArea-error{
+          color: #606060;
+        }
         input {
+          display: block;
+          padding: 0 15px;
           width: 47.5%;
           border: none;
           color: #000000;
-          height: 48px;
+          min-height: 48px;
+
           &:focus {
             outline: none;
           }
         }
         .distance {
-          height: 40px;
+          min-height: 40px;
+          content: '';
         }
         .inputGroup {
-          height: 48px;
+          height: auto;
+          margin-bottom: -20px;
+          div{
+            margin: 20px auto;
+          }
           .inputName {
-            float: left;
+            width:100%;
           }
           .inputEmail {
-            float: right;
+            width:100%;
           }
           .clear {
             content: '';
@@ -714,6 +739,7 @@ a {
           }
         }
         .inputTitle {
+          //margin-top: 40px;
           width: 100%;
           input {
             width: 100%;
@@ -744,6 +770,9 @@ a {
           }
         }
       }
+    }
+    .googleMap{
+      width: 100%;
     }
   }
 }

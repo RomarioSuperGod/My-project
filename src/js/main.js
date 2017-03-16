@@ -37,17 +37,56 @@ $(document).ready(function () {
     $(window).scroll(function() {
         var height = $(window).scrollTop();
 
-        if(height  > 10) {
+        if(height  > 0) {
             $("#header").addClass("header");
-
-
-            // $("header").css({"background" : "white"});
         }
         else{
-            // $("header").css({"background" : "none"});
             $("#header").removeClass("header");
         }
     });
+
+    $('#form').validate({ // initialize the plugin
+            rules: {
+                inputName: {
+                    required: true,
+                    minlength: 5
+                },
+                inputEmail: {
+                    required: true,
+                    email: true
+                },
+                inputTitle: {
+                    required: true,
+                    minlength: 5
+                },
+                textArea: {
+                    required: true,
+                    minlength: 10
+                }
+            }
+        });
+
+
+    // $('.form').submit(function() {
+    //     $('.sendButton').click(function() {
+    //         toastr.success('Your message are accepted');
+    //     });
+    // });
+
+    // $('.sendButton').click(function() {
+    //     toastr.success('Your message are accepted');
+    // });
+
+    $('.form').submit(function(e) {
+        e.preventDefault();
+        if($('.form')){
+        toastr.success('Your message are accepted');
+        }
+        else {
+            return
+        }
+    });
+
 });
 
 

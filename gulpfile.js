@@ -31,7 +31,11 @@ gulp.task('js:vendor', function () {
         'node_modules/bootstrap/dist/js/bootstrap.js',
        'node_modules/masonry-layout/dist/masonry.pkgd.js',
         'node_modules/bxslider/dist/jquery.bxslider.js',
-        'node_modules/flickity/dist/flickity.pkgd.js'
+        'node_modules/flickity/dist/flickity.pkgd.js',
+        'node_modules/jquery-validation/dist/jquery.validate.js',
+        'node_modules/toastr/build/toastr.min.js'
+
+
     ])
         .pipe(concat('vendor.js'))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -43,7 +47,8 @@ gulp.task('css:vendor', function () {
         'node_modules/bootstrap/dist/css/bootstrap.css',
         'node_modules/bootstrap/dist/css/bootstrap-theme.css',
         'node_modules/bxslider/dist/jquery.bxslider.css',
-        'node_modules/flickity/dist/flickity.css'
+        'node_modules/flickity/dist/flickity.css',
+        'node_modules/toastr/build/toastr.css'
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
         .pipe(concat('vendor.css'))
@@ -79,6 +84,8 @@ gulp.task('watch', ['build'], function () {
     gulp.watch('dist/js/*.js').on('change', sync.reload);
     gulp.watch('src/index.html', ['html']);
     gulp.watch('dist/index.html').on('change', sync.reload);
+    gulp.watch('src/project.html', ['html']);
+    gulp.watch('dist/project.html').on('change', sync.reload);
 });
 
 gulp.task('build', ['html', 'css', 'js', 'img']);
