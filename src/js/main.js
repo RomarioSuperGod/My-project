@@ -17,7 +17,6 @@ $(document).ready(function () {
     });
 
     $('.label-carousel').flickity({
-        // options
         cellAlign: 'left',
         contain: true,
         prevNextButtons: false,
@@ -26,9 +25,7 @@ $(document).ready(function () {
     });
 
     $('.blog-carousel').flickity({
-        // options
         cellAlign: 'left',
-        // contain: true,
         prevNextButtons: false,
         pageDots: true,
         wrapAround: true
@@ -38,10 +35,10 @@ $(document).ready(function () {
         var height = $(window).scrollTop();
 
         if(height  > 0) {
-            $("#header").addClass("header");
+            $(".home-page-header").addClass("header");
         }
         else{
-            $("#header").removeClass("header");
+            $(".home-page-header").removeClass("header");
         }
     });
 
@@ -62,28 +59,14 @@ $(document).ready(function () {
                 textArea: {
                     required: true,
                     minlength: 10
+                },
+                postArea: {
+                    required: true
                 }
-            }
-        });
-
-
-    // $('.form').submit(function() {
-    //     $('.sendButton').click(function() {
-    //         toastr.success('Your message are accepted');
-    //     });
-    // });
-
-    // $('.sendButton').click(function() {
-    //     toastr.success('Your message are accepted');
-    // });
-
-    $('.form').submit(function(e) {
-        e.preventDefault();
-        if($('.form')){
-        toastr.success('Your message are accepted');
-        }
-        else {
-            return
+            },
+        submitHandler: function() {
+            toastr.success('Your information are accepted');
+            $('.form').get(0).reset();
         }
     });
 

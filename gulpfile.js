@@ -29,12 +29,12 @@ gulp.task('js:vendor', function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
-       'node_modules/masonry-layout/dist/masonry.pkgd.js',
+        'node_modules/masonry-layout/dist/masonry.pkgd.js',
         'node_modules/bxslider/dist/jquery.bxslider.js',
         'node_modules/flickity/dist/flickity.pkgd.js',
         'node_modules/jquery-validation/dist/jquery.validate.js',
-        'node_modules/toastr/build/toastr.min.js'
-
+        'node_modules/toastr/build/toastr.min.js',
+        'node_modules/datatables.net/js/jquery.dataTables.js'
 
     ])
         .pipe(concat('vendor.js'))
@@ -84,8 +84,10 @@ gulp.task('watch', ['build'], function () {
     gulp.watch('dist/js/*.js').on('change', sync.reload);
     gulp.watch('src/index.html', ['html']);
     gulp.watch('dist/index.html').on('change', sync.reload);
-    gulp.watch('src/project.html', ['html']);
-    gulp.watch('dist/project.html').on('change', sync.reload);
+    gulp.watch('src/snowwork.html', ['html']);
+    gulp.watch('dist/snowwork.html').on('change', sync.reload);
+    gulp.watch('src/blog.html', ['html']);
+    gulp.watch('dist/blog.html').on('change', sync.reload);
 });
 
 gulp.task('build', ['html', 'css', 'js', 'img']);

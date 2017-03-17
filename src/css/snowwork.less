@@ -1,6 +1,6 @@
 @import "fonts";
 
-.headerProject {
+.headerStatic {
   position: static;
 }
 
@@ -9,7 +9,7 @@
   min-height: 390px;
   text-align: left;
   .projectInfoContainer {
-    width: 1170px;
+    max-width: 1170px;
     //min-width: 1170px;
     margin: 0 auto;
     padding-top: 100px;
@@ -55,8 +55,6 @@
 
 .projectImg {
   height:100%;
-  //background-image: url("/img/photoImages/portfolio-4-video-thumb.jpg");
-  //background-size: cover;
   .pageImg{
     .imgPattern{
       vertical-align: middle;
@@ -77,6 +75,7 @@
       color: #606060;
       font-family: 'WorkSans-Medium', sans-serif !important;
       font-size: 14px;
+      transition: .5s;
       &:hover {
         opacity: .5;
       }

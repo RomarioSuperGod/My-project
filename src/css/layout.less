@@ -154,6 +154,7 @@ a {
 }
 
 .startSection {
+  width: 100%;
   z-index: 1;
   position: relative;
   height: 670px;
@@ -415,6 +416,9 @@ a {
     .carousel-cell {
       width: 300px;
       margin-top: 70px;
+      img{
+        margin:0 20px;
+      }
     }
   }
 }
@@ -639,14 +643,14 @@ a {
   background-color: #F6F6F6;
   .contactInfoContainer {
     margin-left: 100px;
-    .googleMap {
-      margin-top: 30px;
-      padding-bottom: 30px;
-      iframe {
-        margin: 0;
-        padding: 0;
-      }
-    }
+    //.googleMap {
+    //
+    //  padding-bottom: 30px;
+    //  iframe {
+    //    margin: 0;
+    //    padding: 0;
+    //  }
+    //}
     .contactSide {
       margin: 0 auto;
       h2 {
@@ -761,10 +765,12 @@ a {
         .sendButton {
           border: none;
           margin-top: 10px;
+          margin-bottom: 50px;
           background: #000000;
           height: 55px;
           width: 180px;
           color: #ffffff;
+          transition: .5s;
           &:hover {
             opacity: .8;
           }
@@ -773,6 +779,9 @@ a {
     }
     .googleMap{
       width: 100%;
+      margin-top: 30px;
+      iframe{
+      }
     }
   }
 }
@@ -809,4 +818,8 @@ a {
       }
     }
   }
+}
+
+@media (max-width: 767px) {
+
 }
