@@ -22,7 +22,6 @@ a {
   margin: 0 auto -200px;
 }
 
-
 .header-light {
   z-index: 5;
   width: 100%;
@@ -31,7 +30,9 @@ a {
   .header_container {
     max-width: 1170px;
     height: 100px;
-
+.icon-bar{
+  color: #ffffff;
+}
     .header-top {
       float: left;
       margin-left: 98px;
@@ -95,6 +96,10 @@ a {
   .header_container {
     max-width: 1170px;
     height: 100px;
+
+    .icon-bar{
+      color: #000000;
+    }
 
     .header-top {
       float: left;
@@ -821,5 +826,23 @@ a {
 }
 
 @media (max-width: 767px) {
+  .nav_item {
+    display: block !important;
+    z-index: 6;
+    background: #000;
+    text-align: center;
+    opacity: .7;
+  }
+  .navbar-collapse.in {
+    overflow-y: visible !important;
+  }
+  .link{
+    color: #ffffff !important;
+    transition: .3s !important;
+    &:hover{
+      font-size: 16px !important;
+    }
+
+  }
 
 }
