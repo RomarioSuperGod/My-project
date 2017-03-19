@@ -17,6 +17,11 @@ gulp.task("img", function() {
         .pipe(gulp.dest("dist/img/"));
 });
 
+gulp.task("json", function() {
+    return gulp.src("src/json/**/*.*")
+        .pipe(gulp.dest("dist/json/"));
+});
+
 gulp.task('js:own', function () {
     return gulp.src('src/js/main.js')
         .pipe(gulpIf(isDevelopment, sourcemaps.init()))
@@ -35,7 +40,6 @@ gulp.task('js:vendor', function () {
         'node_modules/jquery-validation/dist/jquery.validate.js',
         'node_modules/toastr/build/toastr.min.js',
         'node_modules/datatables.net/js/jquery.dataTables.js'
-
     ])
         .pipe(concat('vendor.js'))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -48,7 +52,9 @@ gulp.task('css:vendor', function () {
         'node_modules/bootstrap/dist/css/bootstrap-theme.css',
         'node_modules/bxslider/dist/jquery.bxslider.css',
         'node_modules/flickity/dist/flickity.css',
-        'node_modules/toastr/build/toastr.css'
+        'node_modules/toastr/build/toastr.css',
+        'node_modules/datatables.net-dt/css/jquery.dataTables.css'
+
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
         .pipe(concat('vendor.css'))
@@ -88,7 +94,9 @@ gulp.task('watch', ['build'], function () {
     gulp.watch('dist/snowwork.html').on('change', sync.reload);
     gulp.watch('src/blog.html', ['html']);
     gulp.watch('dist/blog.html').on('change', sync.reload);
+    gulp.watch('src/blogDataTable.html', ['html']);
+    gulp.watch('dist/blogDataTable.html').on('change', sync.reload);
 });
 
-gulp.task('build', ['html', 'css', 'js', 'img']);
+gulp.task('build', ['html', 'css', 'js', 'img', 'json']);
 gulp.task('default', ['build', 'watch']);

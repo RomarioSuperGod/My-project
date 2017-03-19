@@ -70,6 +70,18 @@ $(document).ready(function () {
         }
     });
 
+    $('#dataTable').DataTable( {
+        "ajax": "/json/dataTable.json",
+
+        "columns": [
+            { "data": "Name" },
+            { "data": "Date" },
+            { "data": "Email" },
+            { "data": "City" },
+            { "data": "Personal Number" }
+        ]
+    } );
+
 });
 
 
