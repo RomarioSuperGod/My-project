@@ -60,6 +60,7 @@ table {
 }
 
 .wrapperBlogg{
+  margin: 0 auto -200px;
   background: #f6f6f6;
 }
 
@@ -131,4 +132,23 @@ table {
     background: #f6f6f6;
   }
 
+}
+
+select{
+  border: none;
+  option{
+    &:focus {
+      outline: none;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+input {
+  border: none;
+  padding: 0 10px;
+  &:focus {
+    outline: none;
+  }
 }

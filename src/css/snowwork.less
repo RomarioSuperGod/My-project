@@ -1,5 +1,8 @@
 @import "fonts";
-
+.wrapper{
+  background: #f6f6f6;
+  padding: 0;
+}
 .headerStatic {
   position: static;
 }
@@ -54,8 +57,20 @@
 }
 
 .projectImg {
+  margin:0 auto;
+  min-height: 492px;
   height:100%;
+  width: 1170px;
+  background: #F6F6F6;
   .pageImg{
+    min-height: 100%;
+    width: 1170px;
+    iframe{
+      width: 100%;
+      margin: 0 auto;
+      min-height: 492px;
+      max-width: 1170px;
+    }
     .imgPattern{
       vertical-align: middle;
       max-width: 100%;
@@ -68,6 +83,7 @@
   min-height: 100px;
   background: #ffffff;
   .projectContainer {
+    margin-top: -5px;
     padding: 40px 80px;
     text-align: center;
     a {
