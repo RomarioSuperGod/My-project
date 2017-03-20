@@ -819,6 +819,7 @@ a {
 
 @media (max-width: 767px) {
   .nav_item {
+    min-width: 102px;
     display: block !important;
     z-index: 6;
     background: #000;
@@ -827,7 +828,9 @@ a {
   }
   .navbar-collapse.in {
     overflow-y: visible !important;
-    position: fixed;
+    position: absolute;
+    right: 60px;
+
   }
   .link{
     color: #ffffff !important;
