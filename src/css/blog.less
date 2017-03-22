@@ -58,11 +58,11 @@
           font-size: 20px;
         }
         &.share {
-          a{
+          a {
             text-decoration: none;
             color: #171717;
             transition: .5s;
-            &:hover{
+            &:hover {
               opacity: .6;
             }
           }
@@ -91,16 +91,16 @@
       margin-bottom: 50px;
       .commentInfo {
         margin: 20px 0;
-        font-family:'WorkSans-Medium',sans-serif;
+        font-family: 'WorkSans-Medium', sans-serif;
         font-size: 15px;
-        .date{
+        .date {
           margin-right: 40px;
         }
-        a{
+        a {
           text-decoration: none;
           color: #171717;
           transition: 1s;
-          &:hover{
+          &:hover {
             opacity: .6;
           }
         }
@@ -117,13 +117,13 @@
           width: 100px;
           vertical-align: middle;
           transition: 1s;
-          &:hover{
+          &:hover {
             opacity: .6;
           }
         }
       }
-      .commentContent{
-        font-family:'WorkSans-Regular',sans-serif;
+      .commentContent {
+        font-family: 'WorkSans-Regular', sans-serif;
         font-size: 16px;
         color: #606060;
       }
@@ -132,34 +132,34 @@
 
     }
   }
-  .comment1{
+  .comment1 {
     max-width: 670px;
     margin-left: 90px;
   }
 }
 
-.leaveComment{
+.leaveComment {
   background: #F6F6F6;
-  .leaveCommentContainer{
+  .leaveCommentContainer {
     max-width: 750px;
     margin: 0 auto;
-    h3{
+    h3 {
       font-family: 'PlayfairDisplay-Bold', sans-serif;
       font-size: 24px;
       margin: 20px 0;
       padding-top: 40px;
     }
     .form {
-      #inputName-error{
+      #inputName-error {
         color: #606060;
       }
-      #inputEmail-error{
+      #inputEmail-error {
         color: #606060;
       }
-      #inputTitle-error{
+      #inputTitle-error {
         color: #606060;
       }
-      #textArea-error{
+      #textArea-error {
         color: #606060;
       }
       input {
@@ -181,22 +181,22 @@
       .inputGroup {
         height: auto;
         margin-bottom: -20px;
-        div{
+        div {
           margin: 20px auto;
         }
         .inputName {
-          width:100%;
+          width: 100%;
         }
         .inputEmail {
-          width:100%;
+          width: 100%;
         }
         .clear {
           content: '';
           clear: both;
         }
       }
+
       .inputTitle {
-        //margin-top: 40px;
         width: 100%;
         input {
           width: 100%;
@@ -205,6 +205,8 @@
       }
       .textArea {
         textarea {
+          max-width: 750px;
+          margin: 0 auto;
           border: none;
           color: #606060;
           width: 100%;
@@ -232,6 +234,8 @@
   }
 }
 
+
+
 .blogNavigation {
   min-height: 100px;
   background: #ffffff;
@@ -257,10 +261,98 @@
         float: right;
       }
     }
-    .clear{
+    .clear {
       content: '';
       clear: both;
     }
   }
 }
 
+@media (max-width: 991px) {
+  .inputGroup{
+    padding: 0 !important;
+  }
+  .name1{
+    padding: 0 !important;
+  }
+  .email1{
+    padding: 0 !important;
+  }
+
+    padding: 0;
+    .inputName {
+      width: 100%;
+      padding: 0;
+    }
+    .inputEmail {
+      width: 100%;
+      padding: 0;
+    }
+    .textArea{
+      text-align: center;
+    }
+    textarea{
+      max-width: 720px;
+      margin-top: -20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+  h3{
+    text-align: center;
+  }
+  .buttonFix {
+    text-align: center;
+  }
+
+  .sendButton {
+    text-align: center;
+  }
+
+  .textarea {
+    text-align: center;
+    margin: 0 auto;
+  }
+  textarea{
+    padding: 0;
+    max-width: 390px !important;
+    width: 100%;
+  }
+
+  input{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  h3{
+    text-align: center;
+  }
+  .blogNavigation {
+    padding: 40px 0 !important;
+  }
+
+  .blogContainer {
+    padding: 40px 0 !important;
+  }
+
+  .inputGroup{
+    padding: 0 10px !important;
+    width: 100%;
+    margin: 0 auto !important;
+  }
+
+  .inputName {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .inputEmail {
+    width: 100%;
+    padding: 0;
+  }
+  .textArea{
+    padding: 0 10px;
+  }
+}

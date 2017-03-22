@@ -304,9 +304,13 @@ a {
     .galleryBody {
       margin: 60px 0 100px 0;
       padding: 0;
-      .item-masonry {
+      div{
+        margin: 0;
+        padding: 0;
+      }
+      .itemMasonry {
         position: relative;
-        width: 390px;
+        max-width: 390px;
         a {
           width: 100%;
           height: 100%;
@@ -647,7 +651,8 @@ a {
   min-height: 625px;
   background-color: #F6F6F6;
   .contactInfoContainer {
-    margin-left: 100px;
+    max-width: 1170px;
+    margin: 0 auto;
     .contactSide {
       margin: 0 auto;
       h2 {
@@ -722,6 +727,10 @@ a {
           min-height: 40px;
           content: '';
         }
+        //#inputGroupItem{
+        //  padding: 0;
+        //}
+
         .inputGroup {
           height: auto;
           margin-bottom: -20px;
@@ -817,7 +826,51 @@ a {
   }
 }
 
+
+@media (max-width: 990px){
+
+  .inputGroup{
+    height: 156px;
+  }
+
+
+  .contactInfoContainer{
+    margin: 0 auto;
+  }
+  .massageSide{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  form{
+    margin: 0 auto;
+  }
+  .row{
+    padding: 0;
+    text-align: center !important;
+    margin: 0 auto !important;
+    max-width:780px !important;
+  }
+  #inputGroupItem{
+    padding: 0;
+  }
+}
+
 @media (max-width: 767px) {
+  .massageSide{
+    margin: 0 auto;
+  }
+
+  .inputGroup{
+    height: 156px;
+  }
+
+  .row{
+    text-align: center !important;
+    margin: 0 auto !important;
+    max-width:390px !important;
+  }
+
   .nav_item {
     min-width: 102px;
     display: block !important;

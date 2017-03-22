@@ -2,10 +2,10 @@
  * Created by admin on 08.03.2017.
  */
 $(document).ready(function () {
-    $(".galleryBody").masonry({
-        itemSelector: ".item-masonry",
-        columnWidth: ".item-masonry"
-    });
+    // $(".galleryBody").masonry({
+    //     itemSelector: ".item-masonry",
+    //     columnWidth: ".item-masonry"
+    // });
 
 
     $('.main-carousel').flickity({
@@ -81,6 +81,19 @@ $(document).ready(function () {
             { "data": "Personal Number" }
         ]
     } );
+
+    $(function() {
+        $('#navTop1').mmenu({
+
+            // options
+
+        }, {
+
+            // configuration
+
+        });
+    });
+
 
 });
 

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="icon" type="image/png" href="img/ps-images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 <div class="wrapper" id="wrapper">
@@ -119,23 +121,27 @@
         <div class="leaveCommentContainer">
             <h3>Leave a comment</h3>
             <form class="form" id="form">
-                <div class="inputGroup row">
-                    <div class="col-md-6 col-xs-12 ">
-                        <input type="text" class="inputName " placeholder="Your Name"
-                               name="inputName">
+                <div class="blogFormContainer">
+                    <div class="inputGroup row">
+                        <div  class="col-md-6 col-xs-12 name1">
+                            <input type="text" class="inputName " placeholder="Your Name"
+                                   name="inputName">
+                        </div>
+                        <div class="col-md-6 col-xs-12 email1">
+                            <input type="email" class="inputEmail col-md-6 col-xs-12" placeholder="Your Email"
+                                   name="inputEmail">
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="col-md-6 col-xs-12">
-                        <input type="email" class="inputEmail col-md-6 col-xs-12" placeholder="Your Email"
-                               name="inputEmail">
+                    <div class="distance"></div>
+                    <div class="textArea">
+                        <textarea name="postArea" id="" cols="30" rows="10" placeholder="Your Content"></textarea>
                     </div>
-                    <div class="clear"></div>
+                    <div class="distance"></div>
+                    <div class="buttonFix">
+                        <button type="submit" class="sendButton" name="sendButton">POST A COMMENT</button>
+                    </div>
                 </div>
-                <div class="distance"></div>
-                <div class="textArea">
-                    <textarea name="postArea" id="" cols="30" rows="10" placeholder="Your Content"></textarea>
-                </div>
-                <div class="distance"></div>
-                <button type="submit" class="sendButton" name="sendButton">POST A COMMENT</button>
             </form>
         </div>
     </section>
