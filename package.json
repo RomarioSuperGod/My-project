@@ -29,6 +29,7 @@
     "jquery-validation": "^1.16.0",
     "jquery.mmenu": "^5.7.8",
     "masonry-layout": "^4.1.1",
+    "sidr": "^2.2.1",
     "toastr": "^2.1.2"
   },
   "devDependencies": {

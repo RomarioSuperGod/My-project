@@ -67,7 +67,6 @@ a {
 
           .nav_item {
             display: inline-block;
-            //margin-right:40px;
 
             .link {
               font-family: 'WorkSans-Regular', sans-serif;
@@ -136,8 +135,14 @@ a {
           }
 
           .nav_item {
+            margin: 0;
             display: inline-block;
-            //margin-right:40px;
+
+            a{
+              margin: 0;
+              padding: 0;
+            }
+
 
             .link {
               font-family: 'WorkSans-Regular', sans-serif;
@@ -877,7 +882,10 @@ a {
     z-index: 6;
     background: #000;
     text-align: center;
-    opacity: .7;
+    opacity: .8;
+    &:hover{
+     opacity: .7;
+    }
   }
   .navbar-collapse.in {
     overflow-y: visible !important;
@@ -889,7 +897,7 @@ a {
     color: #ffffff !important;
     transition: .3s !important;
     &:hover{
-      font-size: 16px !important;
+      //font-size: 16px !important;
     }
 
   }

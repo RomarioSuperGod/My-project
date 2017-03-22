@@ -82,18 +82,10 @@ $(document).ready(function () {
         ]
     } );
 
-    $(function() {
-        $('#navTop1').mmenu({
-
-            // options
-
-        }, {
-
-            // configuration
-
-        });
+    $('#sidr!').sidr({
+        name: 'sidr-right',
+        side: 'right'
     });
-
 
 });
 
